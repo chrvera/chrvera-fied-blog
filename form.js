@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const form = document.getElementById('blogForm');
     const message = document.getElementById('message');
 
+
     form.addEventListener('submit', function(event) {
         event.preventDefault();
         
@@ -23,6 +24,8 @@ document.addEventListener("DOMContentLoaded", function() {
         let posts = JSON.parse(localStorage.getItem('posts')) || [];
         posts.push(post);
         localStorage.setItem('posts', JSON.stringify(posts));
+
+        
 
         window.location.href = './blog.html';
     });
