@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Blog</title>
+    <link rel="stylesheet" href="./form.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+    </header>
+<main>
+<div class="left-pane">
+    <div class="logo">
+        My First Blog
+    </div>
+</div>
+<div class="right-pane">
+    <div class="form-container">
+        <h2>What's on your mind?</h2>
+        <form id="blogForm">
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <input type="text" id="title" name="title" placeholder="Title" required>
+            <textarea name="content" id="content" rows="5" placeholder="Content" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="message"></div>
+    </div>
+</div>
+</main>
+<script src="./form.js"></script>
+</body>
+</html>
